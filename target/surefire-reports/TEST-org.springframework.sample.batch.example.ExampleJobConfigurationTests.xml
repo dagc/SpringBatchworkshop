@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="1.125" errors="0" skipped="0" tests="2" name="org.springframework.sample.batch.example.ExampleJobConfigurationTests">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.6.0_17\jre\bin"/>
+    <property name="java.vm.version" value="14.3-b01"/>
+    <property name="java.vm.vendor" value="Sun Microsystems Inc."/>
+    <property name="java.vendor.url" value="http://java.sun.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="NO"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 3"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\worshop\springbatch\batch-worskshop"/>
+    <property name="java.runtime.version" value="1.6.0_17-b04"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="basedir" value="C:\worshop\springbatch\batch-worskshop"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.6.0_17\jre\lib\endorsed"/>
+    <property name="os.arch" value="x86"/>
+    <property name="surefire.real.class.path" value="C:\DOCUME~1\coreldag.VSW\LOCALS~1\Temp\surefirebooter6245974367823221811.jar"/>
+    <property name="java.io.tmpdir" value="C:\DOCUME~1\coreldag.VSW\LOCALS~1\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows XP"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.6.0_17\jre\bin;.;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\PC Connectivity Solution\;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Common Files\Roxio Shared\DLLShared\;C:\Program Files\Intel\WiFi\bin\;C:\tools\apache-maven-2.2.0-bin\apache-maven-2.2.0\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\QuickTime\QTSystem\"/>
+    <property name="surefire.test.class.path" value="C:\worshop\springbatch\batch-worskshop\target\test-classes;C:\worshop\springbatch\batch-worskshop\target\classes;C:\Documents and Settings\coreldag.VSW\.m2\repository\junit\junit\4.7\junit-4.7.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\springframework\spring-test\3.0.2.RELEASE\spring-test-3.0.2.RELEASE.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\springframework\spring-jdbc\3.0.2.RELEASE\spring-jdbc-3.0.2.RELEASE.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\springframework\spring-beans\3.0.2.RELEASE\spring-beans-3.0.2.RELEASE.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\springframework\spring-core\3.0.2.RELEASE\spring-core-3.0.2.RELEASE.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\springframework\spring-asm\3.0.2.RELEASE\spring-asm-3.0.2.RELEASE.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\springframework\spring-tx\3.0.2.RELEASE\spring-tx-3.0.2.RELEASE.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\springframework\spring-aop\3.0.2.RELEASE\spring-aop-3.0.2.RELEASE.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\springframework\spring-context\3.0.2.RELEASE\spring-context-3.0.2.RELEASE.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\springframework\spring-expression\3.0.2.RELEASE\spring-expression-3.0.2.RELEASE.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\springframework\batch\spring-batch-core\2.1.1.RELEASE\spring-batch-core-2.1.1.RELEASE.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\springframework\batch\spring-batch-infrastructure\2.1.1.RELEASE\spring-batch-infrastructure-2.1.1.RELEASE.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\com\thoughtworks\xstream\xstream\1.3\xstream-1.3.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\xpp3\xpp3_min\1.1.4c\xpp3_min-1.1.4c.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\codehaus\jettison\jettison\1.1\jettison-1.1.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\commons-dbcp\commons-dbcp\1.2.2\commons-dbcp-1.2.2.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\commons-pool\commons-pool\1.3\commons-pool-1.3.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\commons-io\commons-io\1.4\commons-io-1.4.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\hsqldb\hsqldb\1.8.0.7\hsqldb-1.8.0.7.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\aspectj\aspectjrt\1.6.8\aspectjrt-1.6.8.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\aspectj\aspectjweaver\1.6.8\aspectjweaver-1.6.8.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\log4j\log4j\1.2.14\log4j-1.2.14.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\springframework\ws\spring-xml\1.5.9\spring-xml-1.5.9.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\springframework\ws\spring-oxm\1.5.9\spring-oxm-1.5.9.jar;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="50.0"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="os.version" value="5.1"/>
+    <property name="user.home" value="C:\Documents and Settings\coreldag.VSW"/>
+    <property name="user.timezone" value="Europe/Berlin"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.6"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="coreldag"/>
+    <property name="java.class.path" value="C:\worshop\springbatch\batch-worskshop\target\test-classes;C:\worshop\springbatch\batch-worskshop\target\classes;C:\Documents and Settings\coreldag.VSW\.m2\repository\junit\junit\4.7\junit-4.7.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\springframework\spring-test\3.0.2.RELEASE\spring-test-3.0.2.RELEASE.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\springframework\spring-jdbc\3.0.2.RELEASE\spring-jdbc-3.0.2.RELEASE.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\springframework\spring-beans\3.0.2.RELEASE\spring-beans-3.0.2.RELEASE.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\springframework\spring-core\3.0.2.RELEASE\spring-core-3.0.2.RELEASE.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\springframework\spring-asm\3.0.2.RELEASE\spring-asm-3.0.2.RELEASE.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\springframework\spring-tx\3.0.2.RELEASE\spring-tx-3.0.2.RELEASE.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\springframework\spring-aop\3.0.2.RELEASE\spring-aop-3.0.2.RELEASE.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\springframework\spring-context\3.0.2.RELEASE\spring-context-3.0.2.RELEASE.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\springframework\spring-expression\3.0.2.RELEASE\spring-expression-3.0.2.RELEASE.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\springframework\batch\spring-batch-core\2.1.1.RELEASE\spring-batch-core-2.1.1.RELEASE.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\springframework\batch\spring-batch-infrastructure\2.1.1.RELEASE\spring-batch-infrastructure-2.1.1.RELEASE.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\com\thoughtworks\xstream\xstream\1.3\xstream-1.3.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\xpp3\xpp3_min\1.1.4c\xpp3_min-1.1.4c.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\codehaus\jettison\jettison\1.1\jettison-1.1.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\commons-dbcp\commons-dbcp\1.2.2\commons-dbcp-1.2.2.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\commons-pool\commons-pool\1.3\commons-pool-1.3.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\commons-io\commons-io\1.4\commons-io-1.4.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\hsqldb\hsqldb\1.8.0.7\hsqldb-1.8.0.7.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\aspectj\aspectjrt\1.6.8\aspectjrt-1.6.8.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\aspectj\aspectjweaver\1.6.8\aspectjweaver-1.6.8.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\log4j\log4j\1.2.14\log4j-1.2.14.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\springframework\ws\spring-xml\1.5.9\spring-xml-1.5.9.jar;C:\Documents and Settings\coreldag.VSW\.m2\repository\org\springframework\ws\spring-oxm\1.5.9\spring-oxm-1.5.9.jar;"/>
+    <property name="java.vm.specification.version" value="1.0"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.6.0_17\jre"/>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.language" value="no"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="1.6.0_17"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.6.0_17\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.6.0_17\jre\lib\resources.jar;C:\Program Files\Java\jdk1.6.0_17\jre\lib\rt.jar;C:\Program Files\Java\jdk1.6.0_17\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.6.0_17\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.6.0_17\jre\lib\jce.jar;C:\Program Files\Java\jdk1.6.0_17\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.6.0_17\jre\classes"/>
+    <property name="java.vendor" value="Sun Microsystems Inc."/>
+    <property name="localRepository" value="C:\Documents and Settings\coreldag.VSW\.m2\repository"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+  </properties>
+  <testcase time="0.938" classname="org.springframework.sample.batch.example.ExampleJobConfigurationTests" name="testSimpleProperties"/>
+  <testcase time="0.156" classname="org.springframework.sample.batch.example.ExampleJobConfigurationTests" name="testLaunchJob"/>
+</testsuite>
