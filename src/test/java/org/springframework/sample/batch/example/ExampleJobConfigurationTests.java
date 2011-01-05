@@ -49,6 +49,7 @@ public class ExampleJobConfigurationTests {
 	@Test
 	public void testLaunchJob() throws Exception {
 		
+		
 		jobLauncher.run(job, new JobParameters());
 	}
 	
