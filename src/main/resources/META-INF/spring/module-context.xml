@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:batch="http://www.springframework.org/schema/batch"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+	    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+		http://www.springframework.org/schema/batch http://www.springframework.org/schema/batch/spring-batch-2.1.xsd 
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.5.xsd
+		">
+
+	<description>Example job to get you started. It provides a
+		skeleton for
+		a typical batch application.</description>
+
+	<job id="job122" xmlns="http://www.springframework.org/schema/batch">
+
+		<step id="step1" parent="simpleStep" >
+			<tasklet >
+				<chunk chunk-completion-policy="policy" reader="itemReader" writer="writer2"  skip-limit="2">
+					<batch:skippable-exception-classes>
+						<batch:include class="java.lang.Exception"/>
+					</batch:skippable-exception-classes>
+				</chunk>
+			</tasklet>
+		</step>
+	</job>
+	<bean id="policy" class="org.springframework.batch.repeat.policy.SimpleCompletionPolicy">
+		<constructor-arg value="5"/>
+	</bean>
+
+	<bean id="itemReader" class="org.springframework.batch.item.xml.StaxEventItemReader">
+		<property name="fragmentRootElementName" value="ansatt" />
+		<property name="resource" value="classpath:bsit001-sample-input-file.xml" />
+		<property name="unmarshaller" ref="ansattMarshaller" />
+		
+		
+
+	</bean>
+
+	<bean id="ansattMarshaller" class="org.springframework.oxm.xstream.XStreamMarshaller">
+		<property name="aliases">
+
+			<util:map id="aliases">
+				<entry key="ansatt" value="com.siriusit.worskshop.batch.domain.Ansatt" />
+
+				<entry key="fnr" value="java.lang.String" />
+				<entry key="firma" value="java.lang.String" />
+				<entry key="stillingstype" value="java.lang.String" />
+				<entry key="datoFom" value="java.lang.String" />
+				<entry key="sertA" value="boolean" />
+				<entry key="sertB" value="boolean" />
+				<entry key="sertC" value="boolean" />
+				<entry key="sertD" value="boolean" />
+				<entry key="anbefaling" value="boolean" />
+			</util:map>
+		</property>
+		<property name="converters">
+			<list>
+				<bean class="com.thoughtworks.xstream.converters.basic.DateConverter">
+					<constructor-arg value="dd.MM.yyyy" />
+					<constructor-arg value="dd.MM.yyyy,dd.MM.yyyy"/>
+				</bean>
+			</list>
+		</property>
+
+
+	</bean>
+
+
+	
+
+	<bean id="writer2"
+		class="com.siriusit.worskshop.batch.SimpleItemWriter" />
+
+
+	<bean id="simpleStep"
+		class="org.springframework.batch.core.step.item.SimpleStepFactoryBean"
+		abstract="true">
+		<property name="transactionManager" ref="transactionManager" />
+		<property name="jobRepository" ref="jobRepository" />
+		
+		
+	</bean>
+
+</beans>
