@@ -3,7 +3,15 @@ package com.siriusit.worskshop.batch.domain;
 import java.util.Date;
 
 
-
+/**
+ * Domene klasse som representerer en ansatt
+ * 
+ * 
+ * 
+ * 
+ * @author Dag Corell
+ *
+ */
 public class Ansatt {
 
 private String fnr;
